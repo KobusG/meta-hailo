@@ -6,7 +6,7 @@ SRC_URI = "git://git@github.com/hailo-ai/tappas.git;protocol=https;branch=master
 
 SRCREV = "4341aa360b7f8b9eac9b2d3b26f79fca562b34e4"
 LICENSE = "LGPLv2.1"
-LIC_FILES_CHKSUM += "file://../../LICENSE;md5=4fbd65380cdd255951079008b364516c"
+LIC_FILES_CHKSUM += "file://../licenses/LICENSE;md5=6f55b1feb4854e8ac5dd4a1bd4a378ed"
 
 DEPENDS += " gstreamer1.0 gstreamer1.0-plugins-base cxxopts rapidjson libgsthailotools libmedialib-api"
 RDEPENDS:${PN} += " bash libgsthailotools"

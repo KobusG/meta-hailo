@@ -3,14 +3,13 @@ DESCRIPTION = "TAPPAS ARM applications recipe, \
                the apps hefs and media urls are taken from files/download_reqs.txt"
 
 S = "${WORKDIR}/git/core/hailo"
-
+LIC_FILES_CHKSUM = "file://../../LICENSE;md5=6f55b1feb4854e8ac5dd4a1bd4a378ed"
 inherit hailotools-base tappas-apps-base
 
 # Setting meson build target as 'apps'
 TAPPAS_BUILD_TARGET = "apps"
 
 LPR_APP_NAME = "license_plate_recognition"
-WEBSERVER_APP_NAME = "webserver"
 
 OPENCV_UTIL = "libhailo_cv_singleton.so"
 
@@ -44,7 +43,7 @@ do_install:append() {
     fi
 }
 
-FILES:${PN} += " /home/root/apps/* /home/root/apps/${LPR_APP_NAME}/* /home/root/apps/${LPR_APP_NAME}/resources/* /home/root/apps/${WEBSERVER_APP_NAME}/resources/* /usr/lib/${OPENCV_UTIL}.${PV}"
+FILES:${PN} += " /home/root/apps/* /home/root/apps/${LPR_APP_NAME}/* /home/root/apps/${LPR_APP_NAME}/resources/* /usr/lib/${OPENCV_UTIL}.${PV}"
 FILES:${PN}-lib += "/usr/lib/${OPENCV_UTIL}.${PV}"
 RDEPENDS:${PN}-staticdev = ""
 RDEPENDS:${PN}-dev = ""

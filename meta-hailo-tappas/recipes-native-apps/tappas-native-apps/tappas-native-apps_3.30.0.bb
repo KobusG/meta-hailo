@@ -5,7 +5,7 @@ DESCRIPTION = "TAPPAS Hailo15 native applications recipe, \
 inherit tappas-base tappas-apps-base
 
 S = "${WORKDIR}/git/apps/h15/native"
-
+LIC_FILES_CHKSUM = "file://../../../../LICENSE;md5=6f55b1feb4854e8ac5dd4a1bd4a378ed"
 DEPENDS += " opencv"
 
 REQS_PATH = "${FILE_DIRNAME}/files/"

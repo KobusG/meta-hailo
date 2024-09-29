@@ -1,0 +1,2 @@
+https://hailo-tappas.s3.eu-west-2.amazonaws.com/v3.30/hailo15/hefs/yolov5s_personface_nv12.hef -> apps/h15/gstreamer/ai_example_app -> 84750bf6a3541a3a8e25874d46f61c03
+https://hailo-tappas.s3.eu-west-2.amazonaws.com/v3.30/hailo15/hefs/tddfa_mobilenet_v1_nv12.hef -> apps/h15/gstreamer/ai_example_app -> 1bae8727571f67ca8f89eaf3ae1b13eb

@@ -3,7 +3,7 @@ DESCRIPTION = "TAPPAS ARM applications recipe, \
                the apps hefs and media urls are taken from files/download_reqs.txt"
 
 S = "${WORKDIR}/git/core/hailo"
-LIC_FILES_CHKSUM = "file://../../LICENSE;md5=6f55b1feb4854e8ac5dd4a1bd4a378ed"
+LIC_FILES_CHKSUM = "file://../../LICENSE;md5=4fbd65380cdd255951079008b364516c"
 inherit hailotools-base tappas-apps-base
 
 # Setting meson build target as 'apps'

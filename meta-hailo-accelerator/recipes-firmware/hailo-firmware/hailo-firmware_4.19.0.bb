@@ -16,8 +16,8 @@ FW_PATH = "${WORKDIR}/hailo8_fw.${PV}.bin"
 
 do_install() {
 	# Stores hailo8_fw.bin in the rootfs under /lib/firmware/hailo
-	install -d ${D}/lib/firmware/hailo
-	install -m 0755 ${FW_PATH} ${D}/lib/firmware/hailo/hailo8_fw.bin
+	install -d ${D}${nonarch_base_libdir}/firmware/hailo
+	install -m 0755 ${FW_PATH} ${D}${nonarch_base_libdir}/firmware/hailo/hailo8_fw.bin
 }
 
-FILES:${PN} += "/lib /lib/* /lib/firmware/hailo/hailo8_fw*"
+FILES:${PN} += "${nonarch_base_libdir} ${nonarch_base_libdir}/* ${nonarch_base_libdir}/firmware/hailo/hailo8_fw*"
